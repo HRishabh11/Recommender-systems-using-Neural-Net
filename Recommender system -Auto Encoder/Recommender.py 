@@ -1,0 +1,16 @@
+# Autoencoder data preprocessing
+
+# importing libraries
+
+import numpy as np
+import pandas as pd 
+import torch
+import torch.nn as nn
+import torch.nn.parallel
+import torch.optim as optim
+import torch.utils.data
+import torch.autograd import variable
+
+#importing the data
+movies = pd.read_csv("ml-1m/movies.dat", sep = '::',header = None)
+
